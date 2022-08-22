@@ -1,0 +1,110 @@
+input {
+    outline: none;
+}
+
+.form-none {
+    display: none;
+}
+.form-container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+.form {
+    border: 1px solid #ccca;
+    padding: 20px;
+    width: max-content;
+    border-radius: 10px;
+    height: 500px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.form__title{
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.form__equis {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    width: 20px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+}
+.form__equis:hover{
+    background-color: #0005;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.form__list{
+    display: block;
+   
+}
+
+.label__form{
+    font-weight: bold;
+	font-size: 1em;
+	font-family: sans-serif;
+	color: #333
+}
+
+.input__form{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+.form__btn {
+    display: block;
+    width: min-content;
+    padding: 8px 12px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: darkslategray;
+    box-shadow: 3px -3px teal;
+    color: #fff;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media screen and (max-width: 858px){
+    .form__btn{
+       margin-top: -20px;
+       
+}
+}
